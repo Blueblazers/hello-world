@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dey Hardware</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="/images/logo.jpg"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <style>
+        body {
+            background: #fff;
+            font-family: var(--alice);
+            font-size: 14px;
+            color:#000;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-container {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            border: 10px double #999;
+            height: 300px;
+            box-shadow: 0 0  20px 0 rgba(210, 255, 254, 0.6);
+        }
+        .image-slide {
+            position: relative;
+        }
+        .image {
+            opacity: 1;
+            display: block;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .image-slide:hover .image {
+            opacity: 0.3;
+        }
+        .image-slide:hover .middle {
+            opacity: 1;
+        }
+        .text {
+            //background-color: #4CAF50;
+            color: black;
+            font-size: 25px;
+            font-weight: 700;
+            padding: 16px 32px;
+        }
+    </style>
+
+</head>
+<body>
+    <!--***************************************header part start***************************************** -->
+    <header>
+    <div class="header" id="topheader">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+            <div class="container text-uppercase p-2" >
+            <a class="navbar-brand font-weight-bold text-white" href="index.html">
+                Dey Hardware
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="products.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Products
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="faucets.html" style="color:#000 !important;">Faucets</a>
+			                <a class="dropdown-item" href="sanitaryware.html" style="color:#000 !important;">Sanitarywares</a>
+			                <a class="dropdown-item" href="showers.html" style="color:#000 !important;">Showers</a>
+			                <a class="dropdown-item" href="flushing_systems.html" style="color:#000 !important;">Flushing System</a>
+			                <a class="dropdown-item" href="water_heater.html" style="color:#000 !important;">Water Heaters</a>
+			                <a class="dropdown-item" href="bathroom_accessories.html" style="color:#000 !important;">Bathroom Accessories</a>
+			                <a class="dropdown-item" href="wellness.html" style="color:#000 !important;">Wellness</a>
+			                <a class="dropdown-item" href="shower_panel.html" style="color:#000 !important;">Shower Panels</a>
+			                <a class="dropdown-item" href="enclosure.html" style="color:#000 !important;">Enclosures</a>
+			                <a class="dropdown-item" href="pump.html" style="color:#000 !important;">Pumps</a>
+			                <a class="dropdown-item" href="pipes.html" style="color:#000 !important;">Pipes</a>
+			                <a class="dropdown-item" href="fittings.html" style="color:#000 !important;">Fittings</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.php">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+
+    </div>
+    <!--***************************************header part end***************************************** -->
+    <section>
+    <div class="parallax1">
+        <center><div class="center-div">
+                <h1 class="font-weight-bold" style="font-weight: 900; font-size: 50px;">Our CSR</h1>
+                <p>The one stop shop for all your bathroom needs. </p>
+                <div class="header-button">
+                    <a href="aboutus.html">About Us</a>
+                    <a href="contact.php">Contact Us</a>
+                </div>
+            </div></center>
+    </div>
+    </section>
+    </header>
+    <!--***************************************header part end***************************************** -->
+    <br><br>
+    <!--***************************************main part start***************************************** -->
+    <main>
+        <br><br><br>
+        <div class="error" style="color:red;">
+            <center><i class="fa-5x fas fa-exclamation-triangle"></i>
+            <br><br>
+            <h1>Sorry! This Page is under Maintainence.</h1></center>
+            <br><br><br>
+        </div>
+        <div class="sticky1">
+        <a href="contact.php"><span>Enquiry</span></a>
+    </div>
+        <div class="sticky2">
+        <a href="tel:8777579812"><span><i class="fa-2x fas fa-phone-volume"></i></span></a>
+    </div>
+    </main>
+
+    <!--***************************************main part end***************************************** -->
+
+    <footer>
+        <section class="info3writing" >
+            <div class="container headings text-center">
+                <h1 class="text-center font-weight-bold" style="font-size: 35px;color: white; font-weight: 600; text-transform:uppercase; padding: 40px 0;">Choosing the Right Product is a Challenging Task.</h1>
+            </div>
+            <br><br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-12 offset-lg-2 offset-md-2 col-1">
+                        <div class="button-contact">
+                            <div class="button_cont" align="center">
+                                <a class="example_a" href="catalouge.html" target="_blank" rel="nofollow noopener">Download Catalouge!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="footersection" id="footerdiv" style="background-color:#16c9f6; color: white; padding: 40px; ">
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-12">
+                        <span class="title">About Company</span>
+                        <hr style="border-bottom: double 5px; color: white;">
+                        <ul class="bullets">
+                            <li><a class="anchortags" href="faqs.html">FAQs</a></li>
+                            <li><a class="anchortags" href="#">Services</a></li>
+                            <li><a class="anchortags" href="staff.html">Our Staffs</a></li>
+                            <li><a class="anchortags" href="contact.php">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-12">
+                        <span class="title">Products</span>
+                        <hr style="border-bottom: double 5px; color: white;">
+                        <ul class="bullets">
+                            <li><a class="anchortags" href="faucets.html">Faucets</a></li>
+                            <li><a class="anchortags" href="sanitaryware.html">Sanitarywares</a></li>
+                            <li><a class="anchortags" href="shower.html">Showers</a></li>
+                            <li><a class="anchortags" href="flushing_systems.html">Flushing</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-12">
+                        <span class="title"></span>
+                        <br>
+                        <hr style="border-bottom: double 5px; color: white;">
+                        <ul class="bullets">
+                            <li><a class="anchortags" href="water_heater.html">Water Heaters</a></li>
+                            <li><a class="anchortags" href="bathroom_accesories.html">Bathroom Accessories</a></li>
+                            <li><a class="anchortags" href="wellness.html">Wellness</a></li>
+                            <li><a class="anchortags" href="shower_panel.html">Shower Panels</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-12">
+                        <span class="title"></span>
+                        <br>
+                        <hr style="border-bottom: double 5px; color: white;">
+                        <ul class="bullets">
+                            <li><a class="anchortags" href="enclosure.html">Enclosures</a></li>
+                            <li><a class="anchortags" href="pump.html">Pumps</a></li>
+                            <li><a class="anchortags" href="pipes.html">Pipes</a></li>
+                            <li><a class="anchortags" href="fittings.html">H.B Fittings</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-12">
+                        <span class="title">Quick Links</span>
+                        <hr style="border-bottom: double 5px; color: white;">
+                        <ul class="bullets">
+                            <li><a class="anchortags" href="catalouge.html">Catalouges</a></li>
+                            <li><a class="anchortags" href="event_gallary.html">Event Gallery</a></li>
+                            <li><a class="anchortags" href="csr.html">CSR</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-12">
+                        <span class="title">Follow Us</span>
+                        <hr style="border-bottom: double 5px; color: white;">
+                        <ul class="bullets">
+                            <li><a class="anchortags" href="www.facebook.com/deyhardware26"><i class="fab fa-facebook"></i>&nbsp&nbspFacebook</a></li>
+                            <li><a class="anchortags" href="https://www.instagram.com/deyhardware26"><li><i class="fab fa-instagram"></i>&nbsp&nbspInstagram</a></li>
+                            <li><a class="anchortags" href="index.html"><li><i class="fab fa-youtube"></i>&nbsp&nbspYoutube</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-2x fas fa-arrow-circle-up"></i></button>
+
+                </div>
+            </div>
+        </div>
+        <div class="text-center" style="background-color:#DEDEDE; width: 100%; color: #6c6c6c;">
+            All Rights Reserved 2020 &copy Dey Hardware <br>
+            &copy; Developed and Maintained by Souptik Dey
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" crosssorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.min.js"></script>
+
+    <script>
+        $('.count').counterUp({
+            delay: 10,
+            time: 3000
+
+        })
+
+        $( document ).ready(function () {
+		    $(".moreBox").slice(0, 4).show();
+		    if ($(".extra-div:hidden").length != 0) {
+			    $("#loadMore").show();
+		    }
+		   $("#loadMore").on('click', function (e) {
+			    e.preventDefault();
+			    $(".moreBox:hidden").slice(0, 4).slideDown();
+			    if ($(".moreBox:hidden").length == 0) {
+				    $("#loadMore").fadeOut('slow');
+			    }
+		   });
+	    });
+
+	    var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+                }
+            else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+
+        /* *********************slider ******************** */
+        var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+
+    </script>
+</body>
+</html>
